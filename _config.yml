@@ -1,0 +1,28 @@
+title: OASIS @ MBZUAI
+short_name: OASIS
+full_name: Oracles, Assurance, and Safety for Intelligent Systems
+institution: Mohamed bin Zayed University of Artificial Intelligence
+tagline: Evidence, not mirages.
+description: >-
+  OASIS builds the oracles, evidence, and guarantees for systems that learn:
+  test oracles for agentic systems, proof-carrying code changes, and
+  infrastructure-enforced safety properties.
+url: https://oasis-mbzuai.github.io
+baseurl: ""
+lang: en
+
+contact:
+  email: youcheng.sun@mbzuai.ac.ae
+  location: Abu Dhabi, United Arab Emirates
+  github: https://github.com/oasis-mbzuai
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - tools
+  - vendor
+  - .github
+
+sass:
+  style: compressed

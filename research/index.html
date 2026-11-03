@@ -1,0 +1,30 @@
+---
+layout: default
+title: Research
+description: Research at OASIS @ MBZUAI: how agents behave, building better coding agents, and verifying the code they write.
+---
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Research</h1>
+    <p class="lede">
+      Four threads, one question: what artifact would convince someone who does
+      not trust the system, or us?
+    </p>
+  </div>
+</section>
+
+{% for theme in site.data.research %}
+<section class="section {% cycle 'plain', 'section-alt' %}">
+  <div class="wrap lead-row">
+    <p class="side">{{ theme.kicker }}</p>
+    <div>
+      <h2 id="{{ theme.id }}">{{ theme.title }}</h2>
+      <p>{{ theme.blurb }}</p>
+      <p class="small">
+        {% for p in theme.papers %}<a href="{{ p.url }}">{{ p.title }}</a> <span class="muted">({{ p.venue }})</span>{% unless forloop.last %}<br>{% endunless %}{% endfor %}
+      </p>
+    </div>
+  </div>
+</section>
+{% endfor %}

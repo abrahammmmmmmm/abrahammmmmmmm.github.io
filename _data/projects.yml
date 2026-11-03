@@ -1,0 +1,17 @@
+- name: AProver
+  lang: Python
+  url: https://github.com/agentic-prover/aprover
+  blurb: >-
+    Verification agents for AI-generated code. AProver drives bounded model
+    checkers (CBMC, Kani, JBMC), writing the specifications itself and then
+    triaging every counterexample as real or spurious, so what it reports are
+    confirmed bugs rather than warnings to wade through.
+
+- name: ClawMobile
+  lang: TypeScript
+  url: https://github.com/ClawMobile/ClawMobile
+  blurb: >-
+    An agent-first phone. On Android the agent becomes the primary interface:
+    it observes device state, drives apps with permission, and accumulates
+    reusable mobile skills, running either inside the app or on a
+    Termux/OpenClaw runtime.

@@ -1,0 +1,67 @@
+# Add a photo by dropping a file in assets/img/people/ and setting `photo:`.
+# `initials` is the fallback shown when there is no photo.
+#
+# `started` is ordering metadata only. It is NOT shown on the page.
+# Keep each group ordered by cohort, and alphabetically within a cohort.
+
+faculty:
+  - name: Youcheng Sun
+    role: Director &middot; Assistant Professor of Computer Science
+    initials: YS
+    photo:
+    links:
+      - { label: Homepage, url: "https://theyoucheng.github.io/" }
+      - { label: MBZUAI, url: "https://mbzuai.ac.ae/study/faculty/youcheng-sun/" }
+      - { label: Google Scholar, url: "https://scholar.google.com/citations?user=Qbb5pBUAAAAJ&hl=en" }
+      - { label: Email, url: "mailto:youcheng.sun@mbzuai.ac.ae" }
+    bio: >-
+      Works on automated reasoning, software engineering and secure agentic
+      systems: what agents really do, how to build better coding agents, and
+      how to verify the code they produce.
+
+phd:
+  # Sep 2024
+  - name: Hamad Alshehhi
+    role: PhD Student
+    initials: HA
+    started: Sep 2024
+    note: Outstanding TA Award, 2026
+  # Sep 2025
+  - name: Boyin Tan
+    role: PhD Student
+    initials: BT
+    started: Sep 2025
+  # Sep 2026
+  - name: Ali Aljaberi
+    role: PhD Student
+    initials: AA
+    started: Sep 2026
+    note: M.Sc. at MBZUAI 2024&ndash;2026 &middot; Future Tech Titan Award
+  - name: Daniel Koh Ji Yang
+    role: PhD Student
+    initials: DK
+    started: Sep 2026
+  - name: Tianyi Zhang
+    role: PhD Student
+    initials: TZ
+    started: Sep 2026
+
+masters:
+  # Sep 2025
+  - name: Hamad Alyahyaee
+    role: M.Sc. Student
+    initials: HA
+  - name: Marco Collepiccolo
+    role: M.Sc. Student
+    initials: MC
+    started: Sep 2025
+  - name: Assylzhan Khamiyev
+    role: M.Sc. Student
+    initials: AK
+    started: Sep 2025
+  - name: Viral Patel
+    role: M.Sc. Student
+    initials: VP
+    started: Sep 2025
+
+alumni: []

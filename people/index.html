@@ -1,0 +1,56 @@
+---
+layout: default
+title: People
+description: People at OASIS @ MBZUAI.
+---
+
+<section class="hero">
+  <div class="wrap">
+    <h1>People</h1>
+  </div>
+</section>
+
+{% assign groups = "faculty,phd,masters,alumni" | split: "," %}
+{% assign labels = "Faculty,PhD students,MSc students,Alumni" | split: "," %}
+
+{% for g in groups %}
+  {% assign members = site.data.people[g] %}
+  {% if members and members.size > 0 %}
+  <section class="section {% cycle 'plain', 'section-alt' %}">
+    <div class="wrap">
+      <h2>{{ labels[forloop.index0] }}</h2>
+      {% for person in members %}
+      <div class="person">
+        <div class="avatar">
+          {% if person.photo %}
+            <img src="{{ person.photo | relative_url }}" alt="{{ person.name }}">
+          {% else %}
+            {{ person.initials }}
+          {% endif %}
+        </div>
+        <div>
+          <h3>{{ person.name }}</h3>
+          <p class="role">{{ person.role }}</p>
+          {% if person.bio %}<p class="small">{{ person.bio }}</p>{% endif %}
+          {% if person.note %}<p class="small muted">{{ person.note }}</p>{% endif %}
+          {% if person.links %}
+          <p class="small">
+            {% for l in person.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %} &middot; {% endunless %}{% endfor %}
+          </p>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}
+
+<section class="section">
+  <div class="wrap lead-row">
+    <p class="side">Joining</p>
+    <div>
+      <p>We are hiring PhD students, interns and postdocs. <a href="{{ '/join/' | relative_url }}">How to apply &rarr;</a></p>
+    </div>
+  </div>
+</section>

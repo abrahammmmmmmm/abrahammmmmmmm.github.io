@@ -1,0 +1,101 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="wrap">
+    <p class="expansion">Oracles &middot; Assurance &middot; Safety for Intelligent Systems</p>
+    <h1>Agents are the new software.</h1>
+    <p class="lede">
+      Software used to be written line by line by people. Increasingly it is
+      written, and run, by AI agents. OASIS studies them as a new kind of
+      software: how they behave, how to build better ones, and how to know the
+      code they produce is correct.
+    </p>
+    <p class="motto">{{ site.tagline }}</p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap lead-row">
+    <p class="side">The premise</p>
+    <div>
+      <p>
+        Code is not correct because an agent wrote it. A system that reports
+        its own success is not evidence of anything.
+      </p>
+      <p>
+        What we look for instead is something a sceptic could check: a
+        counterexample, a proof, a trace that replays. We build the tools that
+        produce those, and we try hard to break our own.
+      </p>
+      <p class="small muted">
+        In a desert, the useful skill is telling water from the appearance of water.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Research</h2>
+    <div class="grid">
+      {% for theme in site.data.research %}
+      <article class="card">
+        <span class="kicker">{{ theme.kicker }}</span>
+        <h3>{{ theme.title }}</h3>
+        <p class="small">{{ theme.blurb | strip_newlines | truncatewords: 30 }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <p style="margin-top:1.5rem">
+      <a href="{{ '/research/' | relative_url }}">More on each &rarr;</a> &middot;
+      <a href="{{ '/publications/' | relative_url }}">Selected publications &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap lead-row">
+    <p class="side">News</p>
+    <div>
+      <ul class="news">
+        {% for item in site.data.news limit: 5 %}
+        <li><span class="news-date">{{ item.date }}</span> {{ item.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="lede" style="margin-top:-.5rem;margin-bottom:1.6rem">
+      A claim is only as good as the thing that can check it.
+    </p>
+    <div class="grid">
+      {% for proj in site.data.projects %}
+      <article class="card">
+        <span class="kicker">{{ proj.lang }}</span>
+        <h3><a href="{{ proj.url }}">{{ proj.name }}</a></h3>
+        <p class="small">{{ proj.blurb }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap lead-row">
+    <p class="side">Join us</p>
+    <div>
+      <p>
+        We are recruiting PhD students and interns at MBZUAI, across
+        autonomous agents, software engineering, formal methods and security.
+      </p>
+      <p><a href="{{ '/join/' | relative_url }}">How to apply &rarr;</a></p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      # GitHub Pages builds the site itself; this job exists to catch
+      # Liquid and data errors before they reach the live site.
+      - run: bundle exec jekyll build --strict_front_matter --trace

@@ -1,0 +1,53 @@
+# Mirrors the three threads on theyoucheng.github.io.
+
+- id: behaviour
+  kicker: How agents behave
+  title: Agents plan, adapt, and sometimes deceive
+  blurb: >-
+    Agents don't just follow fixed instructions. They plan, adapt, and when
+    many of them interact they can cooperate or collude. We study what agents
+    really do, and where that goes wrong.
+  papers:
+    - title: "Lying with Truths: Multi-Agent Collusion for Belief Manipulation"
+      venue: "ACL 2026, Outstanding Paper"
+      url: https://doi.org/10.18653/v1/2026.acl-long.270
+    - title: "Tapas are Free! Training-Free Adaptation of Programmatic Agents"
+      venue: "AAAI 2026"
+      url: https://doi.org/10.1609/aaai.v40i35.40189
+
+- id: coding-agents
+  kicker: Building better coding agents
+  title: The agents that write the software
+  blurb: >-
+    The most useful agents are the ones that write code, and stronger coding
+    agents make stronger general-purpose agents. We work on how they plan,
+    how they reuse learned skills, and how to measure whether any of it
+    actually helps.
+  papers:
+    - title: "SWE-Manager: Selecting and Synthesizing Golden Proposals Before Coding"
+      venue: "arXiv:2601.22956"
+      url: https://doi.org/10.48550/arXiv.2601.22956
+    - title: "Skill Coverage: A Test Adequacy Metric for Agent Skills"
+      venue: "arXiv:2606.20659"
+      url: https://doi.org/10.48550/arXiv.2606.20659
+    - title: "SWE-Skills-Bench: Do Agent Skills Actually Help?"
+      venue: "arXiv:2603.15401"
+      url: https://doi.org/10.48550/arXiv.2603.15401
+
+- id: verifying
+  kicker: Verifying agent-written code
+  title: Code is not correct because an agent wrote it
+  blurb: >-
+    We build tools that check generated code automatically, pairing language
+    models with bounded model checking and symbolic execution so that the
+    verifier, not the model, has the final word on soundness.
+  papers:
+    - title: "Agentic Model Checking"
+      venue: "arXiv:2605.21434"
+      url: https://doi.org/10.48550/arXiv.2605.21434
+    - title: "Agentic Planning for Symbolic Execution"
+      venue: "arXiv:2608.06397"
+      url: https://doi.org/10.48550/arXiv.2608.06397
+    - title: "Partial Contracts Suffice: Sound, LLM-Inferred Regression Verification"
+      venue: "arXiv:2607.10291"
+      url: https://doi.org/10.48550/arXiv.2607.10291

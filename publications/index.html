@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publications
+description: Selected publications from OASIS @ MBZUAI.
+---
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Selected publications</h1>
+    <p class="lede">
+      A representative sample. The complete list is on
+      <a href="https://scholar.google.com/citations?user=Qbb5pBUAAAAJ&amp;hl=en">Google Scholar</a>.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <ol class="pubs">
+      {% for p in site.data.publications %}
+      <li>
+        <div class="pub-title">
+          <a href="{{ p.url }}">{{ p.title }}</a>
+          {% if p.award %}<span class="badge award">{{ p.award }}</span>{% endif %}
+          {% if p.preprint %}<span class="badge preprint">preprint</span>{% endif %}
+        </div>
+        <div class="pub-authors">{{ p.authors }}</div>
+        <div class="pub-meta">{{ p.venue }} &middot; {{ p.year }}</div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

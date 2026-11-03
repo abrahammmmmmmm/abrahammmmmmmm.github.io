@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- capture page_title -%}
+  {% if page.title and page.url != "/" %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}
+{%- endcapture -%}
+<title>{{ page_title | strip }}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_newlines }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page_title | strip }}">
+<meta property="og:description" content="{{ page.description | default: site.description | strip_newlines }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30" role="img">
+          <circle cx="16" cy="16" r="15" fill="none" stroke="currentColor" stroke-width="1.25" opacity=".35"/>
+          <path d="M6 22h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".55"/>
+          <path d="M16 22c0-5 2.5-8 6-9.5-3.5-.5-6 1.5-6 4.5 0-3.5-2.5-5.5-6-5 3.5 1.5 6 4.5 6 10z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>OASIS</strong><span class="brand-at">@ MBZUAI</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Main">
+      {% assign nav = site.data.nav %}
+      {% for item in nav %}
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  {{ content }}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot-inner">
+    <div>
+      <p class="foot-name">{{ site.full_name }}</p>
+      <p class="muted">{{ site.institution }} &middot; {{ site.contact.location }}</p>
+    </div>
+    <div class="foot-links">
+      <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+      <a href="{{ site.contact.github }}">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=Qbb5pBUAAAAJ&amp;hl=en">Google Scholar</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
