@@ -4,9 +4,8 @@ full_name: Oracles, Assurance, and Safety for Intelligent Systems
 institution: Mohamed bin Zayed University of Artificial Intelligence
 tagline: Evidence, not mirages.
 description: >-
-  OASIS builds the oracles, evidence, and guarantees for systems that learn:
-  test oracles for agentic systems, proof-carrying code changes, and
-  infrastructure-enforced safety properties.
+  OASIS studies AI agents as a new kind of software: how they behave, how to
+  build better coding agents, and how to verify the code they produce.
 url: https://oasis-mbzuai.github.io
 baseurl: ""
 lang: en
