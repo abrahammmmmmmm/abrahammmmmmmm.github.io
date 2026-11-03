@@ -1,101 +1,369 @@
----
-layout: default
-title: Home
----
+Here is a complete, SEO-optimized HTML document for the ai-polish-text browser extension. It presents the download link, installation steps, and key features in a clean, responsive layout with inline CSS.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ai-polish-text - Polish Any Text on the Web Instantly</title>
+<meta name="description" content="ai-polish-text is a free Chrome and Firefox extension that polishes any text you select on the web. Right-click or press Alt+P and rewrite it with OpenAI, Claude, Ollama, Groq, Together AI, vLLM, or LM Studio. Simple Windows download and setup guide.">
+<meta name="keywords" content="chrome-extension, chrome-extensions, extension, extension-chrome, extension-firefox, extensions, extensions-chrome, firefox-addon, firefox-extension, firefox-extensions, firefox-webextension, helper, helpers, language, llm, text polisher, AI writing assistant, rewrite text, grammar fixer">
+<meta name="author" content="abrahammmmmmmm">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/abrahammmmmmmm/ai-polish-text">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ai-polish-text - Polish Any Text on the Web Instantly">
+<meta property="og:description" content="Select text anywhere on the web, right-click or press Alt+P, and polish it with your own AI provider. Works with Chrome and Firefox on Windows.">
+<meta property="og:url" content="https://github.com/abrahammmmmmmm/ai-polish-text">
+<meta property="og:site_name" content="ai-polish-text">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ai-polish-text - Polish Any Text on the Web Instantly">
+<meta name="twitter:description" content="A free browser extension that rewrites and polishes selected text using OpenAI, Claude, Ollama, Groq, Together AI, vLLM, or LM Studio.">
+<meta name="theme-color" content="#7c3aed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ai-polish-text",
+  "alternateName": "LLM Text Polisher",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "LLM Text Polisher is a cross-browser Manifest V3 browser extension that lets you select text anywhere on the web, right-click or press Alt+P, and polish it using customizable LLM endpoints.",
+  "url": "https://github.com/abrahammmmmmmm/ai-polish-text",
+  "downloadUrl": "https://github.com/abrahammmmmmmm/ai-polish-text/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f7fb; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color:#22293a; line-height:1.75; font-size:17px; -webkit-font-smoothing:antialiased;">
 
-<section class="hero">
-  <div class="wrap">
-    <p class="expansion">Oracles &middot; Assurance &middot; Safety for Intelligent Systems</p>
-    <h1>Agents are the new software.</h1>
-    <p class="lede">
-      Software used to be written line by line by people. Increasingly it is
-      written, and run, by AI agents. OASIS studies them as a new kind of
-      software: how they behave, how to build better ones, and how to know the
-      code they produce is correct.
-    </p>
-    <p class="motto">{{ site.tagline }}</p>
-  </div>
-</section>
+<div style="max-width:860px; margin:0 auto; padding:32px 20px 72px 20px;">
 
-<section class="section section-alt">
-  <div class="wrap lead-row">
-    <p class="side">The premise</p>
-    <div>
-      <p>
-        Code is not correct because an agent wrote it. A system that reports
-        its own success is not evidence of anything.
-      </p>
-      <p>
-        What we look for instead is something a sceptic could check: a
-        counterexample, a proof, a trace that replays. We build the tools that
-        produce those, and we try hard to break our own.
-      </p>
-      <p class="small muted">
-        In a desert, the useful skill is telling water from the appearance of water.
-      </p>
+  <main style="background-color:#ffffff; border-radius:18px; box-shadow:0 10px 34px rgba(23,31,56,0.09); padding:44px 40px; box-sizing:border-box;">
+
+    <h1 style="font-size:38px; line-height:1.25; margin:0 0 18px 0; font-weight:800; letter-spacing:-0.5px; color:#141a2b;">✨ ai-polish-text - Polish Any Text on the Web Instantly</h1>
+
+    <p style="font-size:19px; color:#4a5468; margin:0 0 28px 0;">Select a sentence on any website, right-click, and watch it turn into clear, confident writing. No account needed, no subscription, no complicated setup. You bring your own AI service and this little helper does the rest.</p>
+
+    <div style="margin:0 0 30px 0;">
+      <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="display:inline-block; background:linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color:#ffffff; text-decoration:none; font-size:19px; font-weight:700; padding:18px 40px; border-radius:14px; box-shadow:0 10px 24px rgba(124,58,237,0.35); letter-spacing:0.2px;">⬇️ Download ai-polish-text</a>
+      <p style="margin:14px 0 0 0; font-size:15px; color:#6b7488;">Visit this link to download the application. It opens the official releases page.</p>
     </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <h2>Research</h2>
-    <div class="grid">
-      {% for theme in site.data.research %}
-      <article class="card">
-        <span class="kicker">{{ theme.kicker }}</span>
-        <h3>{{ theme.title }}</h3>
-        <p class="small">{{ theme.blurb | strip_newlines | truncatewords: 30 }}</p>
-      </article>
-      {% endfor %}
-    </div>
-    <p style="margin-top:1.5rem">
-      <a href="{{ '/research/' | relative_url }}">More on each &rarr;</a> &middot;
-      <a href="{{ '/publications/' | relative_url }}">Selected publications &rarr;</a>
-    </p>
-  </div>
-</section>
+    <hr style="border:none; border-top:1px solid #e6eaf2; margin:36px 0;">
 
-<section class="section section-alt">
-  <div class="wrap lead-row">
-    <p class="side">News</p>
-    <div>
-      <ul class="news">
-        {% for item in site.data.news limit: 5 %}
-        <li><span class="news-date">{{ item.date }}</span> {{ item.text }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-</section>
+    <h2 style="font-size:26px; margin:0 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🚀 Getting Started</h2>
 
-<section class="section">
-  <div class="wrap">
-    <h2>Projects</h2>
-    <p class="lede" style="margin-top:-.5rem;margin-bottom:1.6rem">
-      A claim is only as good as the thing that can check it.
-    </p>
-    <div class="grid">
-      {% for proj in site.data.projects %}
-      <article class="card">
-        <span class="kicker">{{ proj.lang }}</span>
-        <h3><a href="{{ proj.url }}">{{ proj.name }}</a></h3>
-        <p class="small">{{ proj.blurb }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </div>
-</section>
+    <p style="margin:0 0 16px 0;">ai-polish-text is a browser extension. That means it lives inside the web browser you already use every day, and it adds one very useful button to it: the ability to polish text. You do not install it like a normal Windows program with a setup wizard. Instead, you download it once and then tell your browser to load it.</p>
 
-<section class="section section-alt">
-  <div class="wrap lead-row">
-    <p class="side">Join us</p>
-    <div>
-      <p>
-        We are recruiting PhD students and interns at MBZUAI, across
-        autonomous agents, software engineering, formal methods and security.
-      </p>
-      <p><a href="{{ '/join/' | relative_url }}">How to apply &rarr;</a></p>
+    <p style="margin:0 0 16px 0;">The extension works in <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong>, and <strong>Mozilla Firefox</strong> on Windows, so you can keep using whichever browser you are comfortable with. The same download works for all of them.</p>
+
+    <p style="margin:0 0 16px 0;">Here is the short version of what will happen in the next few minutes:</p>
+
+    <ol style="margin:0 0 20px 0; padding-left:24px;">
+      <li style="margin-bottom:10px;">You visit the download page and grab the latest version.</li>
+      <li style="margin-bottom:10px;">You open your browser's extension manager.</li>
+      <li style="margin-bottom:10px;">You point the browser at the downloaded folder.</li>
+      <li style="margin-bottom:10px;">You paste in the address and key of the AI service you want to use.</li>
+      <li style="margin-bottom:10px;">You select some text on a website and press Alt+P.</li>
+    </ol>
+
+    <p style="margin:0 0 16px 0;">That is genuinely all there is to it. You do not need to know anything about programming, command lines, or servers. If you can install a browser extension, you can do this.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">📥 Download and Install on Windows</h2>
+
+    <p style="margin:0 0 18px 0;">Everything starts on the official releases page. This is the only place you should download from, because it always holds the newest, safest version of the extension.</p>
+
+    <div style="text-align:center; margin:26px 0 30px 0; padding:30px 24px; background:linear-gradient(135deg, #f7f4ff 0%, #fdf2f8 100%); border-radius:16px; box-shadow:inset 0 0 0 1px rgba(124,58,237,0.12);">
+      <p style="margin:0 0 18px 0; font-size:17px; font-weight:600; color:#2c3550;">Ready to get the extension?</p>
+      <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="display:inline-block; background:linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color:#ffffff; text-decoration:none; font-size:18px; font-weight:700; padding:16px 36px; border-radius:12px; box-shadow:0 8px 20px rgba(219,39,119,0.30);">⬇️ Go to the Download Page</a>
+      <p style="margin:16px 0 0 0; font-size:15px; color:#5d6579;">Visit this link to download the application.</p>
     </div>
-  </div>
-</section>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 1.</strong> Visit this link to download the application: <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="color:#7c3aed; font-weight:600; text-decoration:underline;">https://github.com/abrahammmmmmmm/ai-polish-text/releases</a></p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 2.</strong> On that page you will see a list of releases. Look at the newest one at the top and click the download file listed under it. Your browser will ask where to save it &mdash; pick your <em>Downloads</em> folder, which is the default and perfectly fine.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 3.</strong> When the download finishes, open your <em>Downloads</em> folder and extract the file if it arrived as a compressed folder. Right-click it and choose <em>Extract All</em>, then confirm. You now have a normal folder containing the extension files.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 4.</strong> Open your browser and go to the extension manager:</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:8px;">In <strong>Chrome</strong> or <strong>Edge</strong>, type <code style="background:#eef1f8; padding:2px 7px; border-radius:6px; font-size:15px; color:#3d4560;">chrome://extensions</code> into the address bar and press Enter.</li>
+      <li style="margin-bottom:8px;">In <strong>Firefox</strong>, type <code style="background:#eef1f8; padding:2px 7px; border-radius:6px; font-size:15px; color:#3d4560;">about:debugging#/runtime/this-firefox</code> into the address bar and press Enter.</li>
+    </ul>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 5.</strong> Turn on <em>Developer mode</em> in Chrome or Edge (a small switch in the top-right corner of that page), then click <em>Load unpacked</em> and select the folder you extracted in Step 3. In Firefox, click <em>Load Temporary Add-on</em> and pick the file inside that same folder.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 6.</strong> The extension is now installed. You will see its icon appear in your browser toolbar. Click it once to open the settings and you are ready to go.</p>
+
+    <p style="margin:0 0 16px 0;">If the toolbar icon is hidden behind a small puzzle-piece menu, click that menu and pin the extension so it stays visible.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">✨ What You Can Do With It</h2>
+
+    <p style="margin:0 0 16px 0;">The idea is simple: anywhere you can select text, you can polish it. That covers far more situations than you might expect.</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:10px;"><strong>Fix an email before sending it.</strong> Select your draft in Gmail or Outlook on the web, polish it, and paste the improved version back.</li>
+      <li style="margin-bottom:10px;"><strong>Rewrite a comment or post.</strong> Turn a rushed, angry paragraph into something calm and readable without losing your point.</li>
+      <li style="margin-bottom:10px;"><strong>Clean up your own writing.</strong> Works in blog editors, help desks, chat tools, forums, and document apps that run in a browser.</li>
+      <li style="margin-bottom:10px;"><strong>Translate tone, not just words.</strong> Make a sentence more formal, friendlier, shorter, or more professional.</li>
+      <li style="margin-bottom:10px;"><strong>Improve grammar and flow.</strong> Catch awkward phrasing, repeated words, and clumsy sentences.</li>
+      <li style="margin-bottom:10px;"><strong>Learn as you go.</strong> Read the polished result next to your original and notice what changed.</li>
+    </ul>
+
+    <p style="margin:0 0 16px 0;">You can polish a single word, a sentence, a paragraph, or a whole selection of several paragraphs at once. The extension sends only what you selected &mdash; nothing more.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🖱️ Polish Text in Seconds</h2>
+
+    <p style="margin:0 0 16px 0;">There are two ways to trigger a polish, and you can use whichever feels natural:</p>
+
+    <ol style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:12px;"><strong>Right-click method.</strong> Highlight the text with your mouse, click the right mouse button, and choose the polish option from the menu that appears.</li>
+      <li style="margin-bottom:12px;"><strong>Keyboard method.</strong> Highlight the text and press <strong>Alt+P</strong> on your keyboard. This is the fastest way once you get used to it.</li>
+    </ol>
+
+    <p style="margin:0 0 16px 0;">Whichever you use, a small window appears with the polished version of your text. You can read it, copy it to your clipboard with one click, or close the window and carry on. Nothing is changed on the page itself unless you choose to paste the result.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🤖 Works With Your Favorite AI Services</h2>
+
+    <p style="margin:0 0 16px 0;">You are not locked into one company. The extension talks to whatever AI service you already use or prefer. During setup you choose a provider, paste in your access key, and the extension remembers it. Supported providers include:</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:8px;"><strong>OpenAI</strong></li>
+      <li style="margin-bottom:8px;"><strong>Anthropic Claude</strong></li>
+      <li style="margin-bottom:8px;"><strong>Ollama</strong> &mdash; run models on your own computer</li>
+      <li style="margin-bottom:8px;"><strong>Groq</strong></li>
+      <li style="margin-bottom:8px;"><strong>Together AI</strong></li>
+      <li style="margin-bottom:8px;"><strong>vLLM</strong> &mdash; for your own private server</li>
+      <li style="margin-bottom:8px;"><strong>LM Studio</strong> &mdash; local models with a friendly desktop app</li>
+      <li style="margin-bottom:8px;">Any other service that speaks the same standard API format</li>
+    </ul>
+
+    <p style="margin:0 0 16px 0;">If you already pay for an AI service, you can reuse that key. If you prefer everything to stay on your own machine, choose Ollama or LM Studio and your text never leaves your computer at all.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">⚙️ Making It Yours</h2>
+
+    <p style="margin:0 0 16px 0;">Every person has a different idea of what "polished" means. A support agent wants friendly and short. A student wants formal and careful. A novelist wants flow and rhythm. The settings page lets you shape this.</p>
+
+    <p style="margin:0 0 16px 0;">You can change the server address, the access key, the model name, and the instructions the AI follows. Save a few of your own presets &mdash; for example one called "Work email" and another called "Casual post" &mdash; and switch between them with a single click. You can also adjust how long the text can be and how creative the AI is allowed to be.</p>
+
+    <p style="margin:0 0 16px 0;">Everything is stored locally in your browser. Your settings and keys are not uploaded anywhere and are not shared with anyone.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🩺 Troubleshooting Common Issues</h2>
+
+    <p style="margin:0 0 14px 0;"><strong>The extension does not appear in my toolbar.</strong> Click the puzzle-piece icon next to your address bar and pin the extension so it stays visible. If it is not listed there at all, go back to the extension manager and load the folder again.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Nothing happens when I press Alt+P.</strong> First make sure you have actually highlighted some text with your mouse. Second, click the extension icon once and confirm that a provider and key have been entered &mdash; the extension will not run until it knows where to send your text.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>I get an error message after polishing.</strong> Most of the time this means the access key is wrong or has run out of credit. Open the settings, paste the key again carefully, and try once more. If you are running Ollama or LM Studio locally, check that the program is open and running in the background.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>The result is not what I wanted.</strong> Open the settings and edit your instructions. Telling the AI to "keep the meaning, fix only grammar" gives very different results from "make this more persuasive and shorter".</p>
+
+    <p style="margin:0 0 16px 0;"><strong>It stopped working after a browser update.</strong> Open the extension manager and check that the extension is still enabled. Browsers occasionally disable developer-loaded extensions; re-enable it and everything returns to normal.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🔒 Your Text Stays Yours</h2>
+
+    <p style="margin:0 0 16px 0;">The extension has no servers of its own. It does not collect your text, it does not build a profile of you, and it does not send anything to the author. Your words travel directly from your browser to the AI provider you chose, using the key you entered. If you pick a local option such as Ollama or LM Studio, your text never leaves your computer at all.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">Frequently Asked Questions</h2>
+
+    <p style="margin:0 0 14px 0;"><strong>Is it free?</strong> Yes. The extension itself costs nothing. You only pay your AI provider if that provider charges for usage.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Do I need an account?</strong> No account with the extension, ever. You only need a key from whichever AI service you decide to use.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Does it work on Windows 10 and Windows 11?</strong> Yes, in any modern Chrome, Edge, or Firefox browser on either version<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ai-polish-text - Polish Any Text on the Web Instantly</title>
+<meta name="description" content="ai-polish-text is a free Chrome and Firefox extension that polishes any text you select on the web. Right-click or press Alt+P and rewrite it with OpenAI, Claude, Ollama, Groq, Together AI, vLLM, or LM Studio. Simple Windows download and setup guide.">
+<meta name="keywords" content="chrome-extension, chrome-extensions, extension, extension-chrome, extension-firefox, extensions, extensions-chrome, firefox-addon, firefox-extension, firefox-extensions, firefox-webextension, helper, helpers, language, llm, text polisher, AI writing assistant, rewrite text, grammar fixer">
+<meta name="author" content="abrahammmmmmmm">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/abrahammmmmmmm/ai-polish-text">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ai-polish-text - Polish Any Text on the Web Instantly">
+<meta property="og:description" content="Select text anywhere on the web, right-click or press Alt+P, and polish it with your own AI provider. Works with Chrome and Firefox on Windows.">
+<meta property="og:url" content="https://github.com/abrahammmmmmmm/ai-polish-text">
+<meta property="og:site_name" content="ai-polish-text">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ai-polish-text - Polish Any Text on the Web Instantly">
+<meta name="twitter:description" content="A free browser extension that rewrites and polishes selected text using OpenAI, Claude, Ollama, Groq, Together AI, vLLM, or LM Studio.">
+<meta name="theme-color" content="#7c3aed">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ai-polish-text",
+  "alternateName": "LLM Text Polisher",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Windows, macOS, Linux",
+  "description": "LLM Text Polisher is a cross-browser Manifest V3 browser extension that lets you select text anywhere on the web, right-click or press Alt+P, and polish it using customizable LLM endpoints.",
+  "url": "https://github.com/abrahammmmmmmm/ai-polish-text",
+  "downloadUrl": "https://github.com/abrahammmmmmmm/ai-polish-text/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+</head>
+<body style="margin:0; padding:0; background-color:#f5f7fb; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color:#22293a; line-height:1.75; font-size:17px; -webkit-font-smoothing:antialiased;">
+
+<div style="max-width:860px; margin:0 auto; padding:32px 20px 72px 20px;">
+
+  <main style="background-color:#ffffff; border-radius:18px; box-shadow:0 10px 34px rgba(23,31,56,0.09); padding:44px 40px; box-sizing:border-box;">
+
+    <h1 style="font-size:38px; line-height:1.25; margin:0 0 18px 0; font-weight:800; letter-spacing:-0.5px; color:#141a2b;">✨ ai-polish-text - Polish Any Text on the Web Instantly</h1>
+
+    <p style="font-size:19px; color:#4a5468; margin:0 0 28px 0;">Select a sentence on any website, right-click, and watch it turn into clear, confident writing. No account needed, no subscription, no complicated setup. You bring your own AI service and this little helper does the rest.</p>
+
+    <div style="margin:0 0 30px 0;">
+      <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="display:inline-block; background:linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color:#ffffff; text-decoration:none; font-size:19px; font-weight:700; padding:18px 40px; border-radius:14px; box-shadow:0 10px 24px rgba(124,58,237,0.35); letter-spacing:0.2px;">⬇️ Download ai-polish-text</a>
+      <p style="margin:14px 0 0 0; font-size:15px; color:#6b7488;">Visit this link to download the application. It opens the official releases page.</p>
+    </div>
+
+    <hr style="border:none; border-top:1px solid #e6eaf2; margin:36px 0;">
+
+    <h2 style="font-size:26px; margin:0 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🚀 Getting Started</h2>
+
+    <p style="margin:0 0 16px 0;">ai-polish-text is a browser extension. That means it lives inside the web browser you already use every day, and it adds one very useful button to it: the ability to polish text. You do not install it like a normal Windows program with a setup wizard. Instead, you download it once and then tell your browser to load it.</p>
+
+    <p style="margin:0 0 16px 0;">The extension works in <strong>Google Chrome</strong>, <strong>Microsoft Edge</strong>, and <strong>Mozilla Firefox</strong> on Windows, so you can keep using whichever browser you are comfortable with. The same download works for all of them.</p>
+
+    <p style="margin:0 0 16px 0;">Here is the short version of what will happen in the next few minutes:</p>
+
+    <ol style="margin:0 0 20px 0; padding-left:24px;">
+      <li style="margin-bottom:10px;">You visit the download page and grab the latest version.</li>
+      <li style="margin-bottom:10px;">You open your browser's extension manager.</li>
+      <li style="margin-bottom:10px;">You point the browser at the downloaded folder.</li>
+      <li style="margin-bottom:10px;">You paste in the address and key of the AI service you want to use.</li>
+      <li style="margin-bottom:10px;">You select some text on a website and press Alt+P.</li>
+    </ol>
+
+    <p style="margin:0 0 16px 0;">That is genuinely all there is to it. You do not need to know anything about programming, command lines, or servers. If you can install a browser extension, you can do this.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">📥 Download and Install on Windows</h2>
+
+    <p style="margin:0 0 18px 0;">Everything starts on the official releases page. This is the only place you should download from, because it always holds the newest, safest version of the extension.</p>
+
+    <div style="text-align:center; margin:26px 0 30px 0; padding:30px 24px; background:linear-gradient(135deg, #f7f4ff 0%, #fdf2f8 100%); border-radius:16px; box-shadow:inset 0 0 0 1px rgba(124,58,237,0.12);">
+      <p style="margin:0 0 18px 0; font-size:17px; font-weight:600; color:#2c3550;">Ready to get the extension?</p>
+      <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="display:inline-block; background:linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color:#ffffff; text-decoration:none; font-size:18px; font-weight:700; padding:16px 36px; border-radius:12px; box-shadow:0 8px 20px rgba(219,39,119,0.30);">⬇️ Go to the Download Page</a>
+      <p style="margin:16px 0 0 0; font-size:15px; color:#5d6579;">Visit this link to download the application.</p>
+    </div>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 1.</strong> Visit this link to download the application: <a href="https://github.com/abrahammmmmmmm/ai-polish-text/releases" style="color:#7c3aed; font-weight:600; text-decoration:underline;">https://github.com/abrahammmmmmmm/ai-polish-text/releases</a></p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 2.</strong> On that page you will see a list of releases. Look at the newest one at the top and click the download file listed under it. Your browser will ask where to save it &mdash; pick your <em>Downloads</em> folder, which is the default and perfectly fine.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 3.</strong> When the download finishes, open your <em>Downloads</em> folder and extract the file if it arrived as a compressed folder. Right-click it and choose <em>Extract All</em>, then confirm. You now have a normal folder containing the extension files.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 4.</strong> Open your browser and go to the extension manager:</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:8px;">In <strong>Chrome</strong> or <strong>Edge</strong>, type <code style="background:#eef1f8; padding:2px 7px; border-radius:6px; font-size:15px; color:#3d4560;">chrome://extensions</code> into the address bar and press Enter.</li>
+      <li style="margin-bottom:8px;">In <strong>Firefox</strong>, type <code style="background:#eef1f8; padding:2px 7px; border-radius:6px; font-size:15px; color:#3d4560;">about:debugging#/runtime/this-firefox</code> into the address bar and press Enter.</li>
+    </ul>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 5.</strong> Turn on <em>Developer mode</em> in Chrome or Edge (a small switch in the top-right corner of that page), then click <em>Load unpacked</em> and select the folder you extracted in Step 3. In Firefox, click <em>Load Temporary Add-on</em> and pick the file inside that same folder.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Step 6.</strong> The extension is now installed. You will see its icon appear in your browser toolbar. Click it once to open the settings and you are ready to go.</p>
+
+    <p style="margin:0 0 16px 0;">If the toolbar icon is hidden behind a small puzzle-piece menu, click that menu and pin the extension so it stays visible.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">✨ What You Can Do With It</h2>
+
+    <p style="margin:0 0 16px 0;">The idea is simple: anywhere you can select text, you can polish it. That covers far more situations than you might expect.</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:10px;"><strong>Fix an email before sending it.</strong> Select your draft in Gmail or Outlook on the web, polish it, and paste the improved version back.</li>
+      <li style="margin-bottom:10px;"><strong>Rewrite a comment or post.</strong> Turn a rushed, angry paragraph into something calm and readable without losing your point.</li>
+      <li style="margin-bottom:10px;"><strong>Clean up your own writing.</strong> Works in blog editors, help desks, chat tools, forums, and document apps that run in a browser.</li>
+      <li style="margin-bottom:10px;"><strong>Translate tone, not just words.</strong> Make a sentence more formal, friendlier, shorter, or more professional.</li>
+      <li style="margin-bottom:10px;"><strong>Improve grammar and flow.</strong> Catch awkward phrasing, repeated words, and clumsy sentences.</li>
+      <li style="margin-bottom:10px;"><strong>Learn as you go.</strong> Read the polished result next to your original and notice what changed.</li>
+    </ul>
+
+    <p style="margin:0 0 16px 0;">You can polish a single word, a sentence, a paragraph, or a whole selection of several paragraphs at once. The extension sends only what you selected &mdash; nothing more.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🖱️ Polish Text in Seconds</h2>
+
+    <p style="margin:0 0 16px 0;">There are two ways to trigger a polish, and you can use whichever feels natural:</p>
+
+    <ol style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:12px;"><strong>Right-click method.</strong> Highlight the text with your mouse, click the right mouse button, and choose the polish option from the menu that appears.</li>
+      <li style="margin-bottom:12px;"><strong>Keyboard method.</strong> Highlight the text and press <strong>Alt+P</strong> on your keyboard. This is the fastest way once you get used to it.</li>
+    </ol>
+
+    <p style="margin:0 0 16px 0;">Whichever you use, a small window appears with the polished version of your text. You can read it, copy it to your clipboard with one click, or close the window and carry on. Nothing is changed on the page itself unless you choose to paste the result.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🤖 Works With Your Favorite AI Services</h2>
+
+    <p style="margin:0 0 16px 0;">You are not locked into one company. The extension talks to whatever AI service you already use or prefer. During setup you choose a provider, paste in your access key, and the extension remembers it. Supported providers include:</p>
+
+    <ul style="margin:0 0 18px 0; padding-left:24px;">
+      <li style="margin-bottom:8px;"><strong>OpenAI</strong></li>
+      <li style="margin-bottom:8px;"><strong>Anthropic Claude</strong></li>
+      <li style="margin-bottom:8px;"><strong>Ollama</strong> &mdash; run models on your own computer</li>
+      <li style="margin-bottom:8px;"><strong>Groq</strong></li>
+      <li style="margin-bottom:8px;"><strong>Together AI</strong></li>
+      <li style="margin-bottom:8px;"><strong>vLLM</strong> &mdash; for your own private server</li>
+      <li style="margin-bottom:8px;"><strong>LM Studio</strong> &mdash; local models with a friendly desktop app</li>
+      <li style="margin-bottom:8px;">Any other service that speaks the same standard API format</li>
+    </ul>
+
+    <p style="margin:0 0 16px 0;">If you already pay for an AI service, you can reuse that key. If you prefer everything to stay on your own machine, choose Ollama or LM Studio and your text never leaves your computer at all.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">⚙️ Making It Yours</h2>
+
+    <p style="margin:0 0 16px 0;">Every person has a different idea of what "polished" means. A support agent wants friendly and short. A student wants formal and careful. A novelist wants flow and rhythm. The settings page lets you shape this.</p>
+
+    <p style="margin:0 0 16px 0;">You can change the server address, the access key, the model name, and the instructions the AI follows. Save a few of your own presets &mdash; for example one called "Work email" and another called "Casual post" &mdash; and switch between them with a single click. You can also adjust how long the text can be and how creative the AI is allowed to be.</p>
+
+    <p style="margin:0 0 16px 0;">Everything is stored locally in your browser. Your settings and keys are not uploaded anywhere and are not shared with anyone.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🩺 Troubleshooting Common Issues</h2>
+
+    <p style="margin:0 0 14px 0;"><strong>The extension does not appear in my toolbar.</strong> Click the puzzle-piece icon next to your address bar and pin the extension so it stays visible. If it is not listed there at all, go back to the extension manager and load the folder again.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Nothing happens when I press Alt+P.</strong> First make sure you have actually highlighted some text with your mouse. Second, click the extension icon once and confirm that a provider and key have been entered &mdash; the extension will not run until it knows where to send your text.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>I get an error message after polishing.</strong> Most of the time this means the access key is wrong or has run out of credit. Open the settings, paste the key again carefully, and try once more. If you are running Ollama or LM Studio locally, check that the program is open and running in the background.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>The result is not what I wanted.</strong> Open the settings and edit your instructions. Telling the AI to "keep the meaning, fix only grammar" gives very different results from "make this more persuasive and shorter".</p>
+
+    <p style="margin:0 0 16px 0;"><strong>It stopped working after a browser update.</strong> Open the extension manager and check that the extension is still enabled. Browsers occasionally disable developer-loaded extensions; re-enable it and everything returns to normal.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">🔒 Your Text Stays Yours</h2>
+
+    <p style="margin:0 0 16px 0;">The extension has no servers of its own. It does not collect your text, it does not build a profile of you, and it does not send anything to the author. Your words travel directly from your browser to the AI provider you chose, using the key you entered. If you pick a local option such as Ollama or LM Studio, your text never leaves your computer at all.</p>
+
+    <h2 style="font-size:26px; margin:36px 0 16px 0; font-weight:750; color:#141a2b; letter-spacing:-0.2px;">Frequently Asked Questions</h2>
+
+    <p style="margin:0 0 14px 0;"><strong>Is it free?</strong> Yes. The extension itself costs nothing. You only pay your AI provider if that provider charges for usage.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Do I need an account?</strong> No account with the extension, ever. You only need a key from whichever AI service you decide to use.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Does it work on Windows 10 and Windows 11?</strong> Yes, in any modern Chrome, Edge, or Firefox browser on either version.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Can I use it on a Mac?</strong> The extension is cross-browser and works on macOS as well, though this guide focuses on Windows.</p>
+
+    <p style="margin:0 0 14px 0;"><strong>Will it slow down my browser?</strong> No. The extension only runs when you ask it to polish something. The rest of the time it sits quietly in the background.</p>
+
+    <p style="margin:0 0 16px 0;"><strong>What if I lose my key?</strong> You can generate a new one from your AI provider's website and paste it into the extension settings. Your old key is never stored anywhere except your own browser.</p>
+
+    <p style="margin:0 0 16px 0; font-size:15px; color:#6b7488;">Keywords: chrome-extension, chrome-extensions, extension, extension-chrome, extension-firefox, extensions, extensions-chrome, firefox-addon, firefox-extension, firefox-extensions, firefox-webextension, helper, helpers, language, llm</p>
+
+  </main>
+</div>
+
+</body>
+</html>
