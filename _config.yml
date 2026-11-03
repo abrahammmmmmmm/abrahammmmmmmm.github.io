@@ -4,8 +4,8 @@ full_name: Oracles, Assurance, and Safety for Intelligent Systems
 institution: Mohamed bin Zayed University of Artificial Intelligence
 tagline: Evidence, not mirages.
 description: >-
-  OASIS studies AI agents as a new kind of software: how they behave, how to
-  build better coding agents, and how to verify the code they produce.
+  OASIS studies AI agents as a new kind of software: oracles for what they
+  really do, better coding agents, and verification of the code they write.
 url: https://oasis-mbzuai.github.io
 baseurl: ""
 lang: en
