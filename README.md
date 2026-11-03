@@ -27,3 +27,10 @@ bundle exec jekyll serve   # http://127.0.0.1:4000
 Create the `oasis-mbzuai` GitHub organisation (or user), push this repository as
 `oasis-mbzuai.github.io`, and enable Pages with source *Deploy from a branch →
 main → /*. The site is then live at <https://oasis-mbzuai.github.io>.
+
+## Social card
+
+`assets/img/og-card-v2.png` is the Open Graph image, referenced from
+`_layouts/default.html`. Slack and other unfurlers cache images by URL and
+ignore query strings, so **give the file a new name whenever you change it**
+(`-v3`, `-v4`, …) or shares will keep showing the old card indefinitely.
